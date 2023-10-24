@@ -1,0 +1,422 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Teko', sans-serif;
+}
+
+.section{
+    padding: 0px;
+    margin: 0px;
+}
+
+.z-index-high{ 
+    z-index: 9999999;
+}
+
+.z-index-low{ 
+    z-index: 3;
+}
+
+.mt-80{
+    margin-top: 80px;
+}
+
+.mt-120{
+    margin-top: 120px;
+}
+.fix{
+    overflow:hidden;
+}
+
+.fa-magnifying-glass{
+    width: 25px;
+    height: 25px; 
+    font-size: 25px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+button{
+    background: #FE6809;
+    color: #fff;
+    font-family: 'Teko', sans-serif; 
+    width: 153px;
+    height: 48px;
+    top: 24px;
+    padding: 15px, 30px, 15px, 30px;
+    margin-left: 15px;
+    border: none;
+
+}
+
+/* common color */
+.primary-color{
+    color:#FE6809;
+}
+
+.primary-bg{
+    background: #FE6809;
+}
+/* topbar area  start */
+.topbar{
+    background: #1F1F1F; 
+    top: 0;
+    padding: 10px 0px;
+    width: 100%;
+    z-index: 9;
+}
+
+.topbar-left span,.topbar-right span{
+    color: #666666;
+}
+
+.topbar-left{
+    text-align: left;
+} 
+
+.topbar-right{
+    text-align: right;
+    color: #666666;
+}
+
+.topbar-left h6, 
+.topbar-right h6{
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em; 
+    color: #FFFFFF;
+}
+/* topbar area end */
+
+/* header area start */
+header{ 
+    position: absolute;
+    display:inline-block;
+    background:#18191D80;
+    width: 100%; 
+    height: auto;  
+    z-index: 10;
+}
+
+
+.nav-link{
+    color: #fff;
+    text-transform:uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+.nav-link:hover{
+    color: #FE6809;
+}
+
+
+.navbar-toggler-icon{
+    color: #fff!important;
+}
+
+.navbar-toggler{ 
+    color: #fff!important;
+}
+
+.header-content{
+   top: calc(50% - 40px);
+   position: absolute;
+   text-align: left;
+   margin-left: 7%;
+   z-index: 6;
+}
+
+.header-content  h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1.05em;
+    color: #FFFFFF;
+    
+}
+
+.header-content  h1{
+    font-family: Teko;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 110px;
+    letter-spacing: 0em;
+    color: #FFFFFF; 
+
+}
+
+.offcanvas-body {
+    z-index: 999;
+}
+/* header area end */
+
+
+/* slider area start */
+
+.slider{ 
+    position: relative;
+}
+
+
+.carousel-item img{
+    height: 750px!important;
+}
+
+.arrow-left,.arrow-right{
+    text-align:center;
+}
+
+.carousel-control-prev{ 
+    padding: 10px;
+    background: #FE6809;
+    border-radius: 50%;
+    top: calc(50% + 45px);
+    left: 80%;
+    width: 45px;
+    height: 45px; 
+    text-align: center;
+    z-index: 9;
+}
+
+  .carousel-control-next {
+    padding: 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    top: calc(50% - 30px);
+    left: 80%;
+    width: 45px;
+    height: 45px; 
+    text-align: center;
+    z-index: 9;
+
+} 
+
+.carousel-control-next:hover{
+    color: #000;
+}
+
+/* service area start */
+.image-area{
+    height:70vh;  
+    position: relative;
+}
+
+.img-opacity{
+    height:70vh;
+    background: #000000;
+    opacity: .8;
+    position:absolute;
+}
+
+.image-area #service-bg{ 
+    width: 100%;
+    height: 70vh;
+}
+ 
+
+.service-content{
+    position: absolute;
+    z-index: 9;
+}
+
+.service-content h6{
+    font-family: Teko;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    text-align: left; 
+
+}
+
+.service-content h3{
+    font-family: Teko;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;    
+
+}
+
+.card-icon-area h5{ 
+    font-family: 'Teko',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color:#1F1F1F;
+    text-align: left;
+
+}
+
+.card-body h6{ 
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#666666;
+
+}
+
+.image-area{
+    position: relative;   
+}
+
+.service-cards{ 
+    position: absolute;
+    display: inline-block;
+    z-index: 7;
+    width: 90%;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top: 40%; 
+
+}
+ 
+.service-area {   
+    position: static;
+    overflow-y: hidden;
+    z-index: 8;
+    display: block;
+}
+
+/* about area start */
+.about-area{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 9;
+}
+
+.flat-img{
+    position: relative; 
+}
+
+.shape-1,.shape-2,.shape-3{
+    position:absolute;
+    overflow: hidden;
+}
+
+.shape-1{
+    top: 50%;
+}
+
+.shape-2{
+    top: 3%;
+    left: 60%;
+}
+
+.shape-3{
+    top: 3%;
+    left: 80%;
+}
+
+.v-bg-image{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+
+}
+
+.v-img{
+    position: relative;
+    top: 10%;
+    left: 100%;
+}
+
+.v-bg{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+
+.about-right h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.3em;
+    text-align: left;
+    color: #FE6809;
+
+}
+
+.about-right h1{
+    font-family: Teko;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.about-right p{ 
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #666666;
+    
+}
+
+
+.key-feature h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1F1F1F ;
+    
+}
+
+.quality{
+    padding: 5px;
+    background: #F5F5F5;
+    border-bottom:4px solid #FE6809;
+    border-radius: 10%;
+    width: 152px;
+    height: 122px;
+    text-align: center;
+}
+
+.quality h6{
+    font-family: 'Teko',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #1F1F1F;
+
+}
+
+/* about area end */
