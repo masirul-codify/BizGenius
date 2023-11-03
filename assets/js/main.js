@@ -1,34 +1,7 @@
 /***************************************************
 ==================== JS INDEX ======================
 ****************************************************
-// 00. PreLoader
-// 02. Mobile Menu
-// 03. Sidebar
-// 04. Sticky Header Js
-// 05. Data Background
-// 06. Nice Select
-// 07. settings append in body
-// 08. settings open btn
-// 09. Mouse Custom Cursor
-// 10. rtl & color setting 
-// 11. slider__active Js
-// 12. Masonary Js
-// 13. magnificPopup js 
-// 14. Wow Js
-// 15. InHover Active Js
-// 16. testimonial-activation
-// 17. op-gallery-activation
-// 18. service-slider activation
-// 19. brand-active activation
-// 20. blog-slide activation
-// 21. team activation
-// 22. testimonial activation
-// 23. video activation
-// 24. pricing activation
-// 25. Services Details Circle Js 
-// 26. Active Odometer Counter 
-// 27. video play 
-// 28. load more btn 
+
 
 ****************************************************/
 
@@ -65,3 +38,83 @@
 		  
 		  
 	// faq area end
+
+
+	// project swiper
+
+
+	/*=============== SWIPER JS ===============*/
+		let swiperCards = new Swiper(".card__content", {
+			loop: true,
+			spaceBetween: 32,
+			grabCursor: true,
+		
+			pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			dynamicBullets: true,
+			},
+		
+			navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+			},
+		
+			breakpoints:{
+			600: {
+				slidesPerView: 2,
+			},
+			968: {
+				slidesPerView: 4,
+			},
+			},
+		});
+
+
+		
+   	// project-carousel
+	if ($('.project-carousel').length) {
+		$('.project-carousel').owlCarousel({
+			loop:true,
+			margin:10,
+			nav:true,
+			smartSpeed: 500,
+			autoplay: 1000,
+			navText: [ '<i class="fa-solid fa-arrow-left"></i>' ,'<i class="fa-solid fa-arrow-right"></i>'  ],
+			responsive:{
+				0:{
+					items:1
+				},
+				480:{
+					items:1
+				},
+				600:{
+					items:2
+				},
+				800:{
+					items:3
+				},			
+				1200:{
+					items:4
+				}
+
+			}
+		});    		
+	}
+
+
+	// footer popup start
+	$(document).ready(function() {
+		$('.footer___gallery___image').magnificPopup({
+			delegate: 'a', // child items selector, by clicking on it popup will open
+			type: 'image',  
+			gallery:{
+				enabled:true
+			  }
+			// other options
+		  });
+	
+	});
+
+
+	// footer popup end
